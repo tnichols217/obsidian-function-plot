@@ -1,6 +1,6 @@
 {
 	"name": "function-plot",
-	"version": "1.1.0",
+	"version": "1.1.1",
 	"description": "Plots things with function-plot",
 	"main": "main.js",
 	"scripts": {
