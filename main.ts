@@ -6,11 +6,11 @@ import { SettingItem, display, loadSettings, saveSettings } from 'obsidian-setti
 const NAME = "Obsidian Function Plot"
 const CODEBLOCK = "function-plot"
 export interface FunctionPlotSettings {
-	a: SettingItem<string>
+	// a: SettingItem<string>
 }
 
 const DEFAULT_SETTINGS: FunctionPlotSettings = {
-	a: {value: "a", name: "a", desc: "a"}
+	// a: {value: "a", name: "a", desc: "a"}
 }
 
 export default class ObsidianFunctionPlot extends Plugin {
