@@ -1,12 +1,47 @@
-# Obsidian molecule renderer
-Allows you to render molecules by their name inside a `molecule` codeblock
+# Obsidian function plot
+Allows you to render 2d graphs inside a `function-plot` codeblock using the npm package `function-plot`
 
-Uses pubchem to retrieve information about the chemical.
+## function-plot codeblock
 
-## TODO:
-1. Add support for plain SMILES without molecule name
-2. Add custom color support
+The function-plot codeblock uses YAML to specify its configuration.\
+\
+Functions are stored in the `data` object, X-axis data is stored in the xAxis object, same for Y-axis.\
+\
+For example:
 
+````md
+```function-plot
+data:
+	- fn: 2x
+	- fn: x
+	  closed: true
+	- points:
+		- [0,0.5]
+		- [0.5,0]
+	  fnType: points
+	  graphType: polyline
+xAxis:
+	domain:
+		- -1
+		- 1
+yAxis:
+	domain:
+		- -1
+		- 1
+```
+````
+
+Would produce the following graph:\
+<img width="417" alt="image" src="https://github.com/tnichols217/obsidian-function-plot/assets/62992267/577982c3-6713-436e-9c2f-3e94a409c831">
+
+## Reference guide
+
+The entire reference guide for the specifications to the graph can be found [here](https://mauriciopoppe.github.io/function-plot/docs/interfaces/FunctionPlotOptions.html)\
+Other examples for function-plot can be found [here](https://mauriciopoppe.github.io/function-plot/)
+
+## Thanks
+
+Huge thanks to [function-plot](https://www.npmjs.com/package/function-plot) by [Mauricio Poppe](https://github.com/mauriciopoppe)
 
 ---
 
