@@ -1,6 +1,6 @@
 {
 	"name": "obsidian-function-plot",
-	"version": "0.0.3",
+	"version": "1.0.0",
 	"description": "Plots things with function-plot",
 	"main": "main.js",
 	"scripts": {
