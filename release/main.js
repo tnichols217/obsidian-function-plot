@@ -20431,9 +20431,7 @@ function saveSettings(obj, DEFAULT_SETTINGS2) {
 // main.ts
 var NAME = "Obsidian Function Plot";
 var CODEBLOCK = "function-plot";
-var DEFAULT_SETTINGS = {
-  a: { value: "a", name: "a", desc: "a" }
-};
+var DEFAULT_SETTINGS = {};
 var ObsidianFunctionPlot = class extends import_obsidian2.Plugin {
   onload() {
     return __async(this, null, function* () {
